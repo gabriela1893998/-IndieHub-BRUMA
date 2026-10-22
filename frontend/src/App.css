@@ -1,0 +1,59 @@
+.App {
+    background-color: #090a0f;
+    min-height: 100vh;
+}
+
+.grain-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.ambient-glow {
+    position: fixed;
+    border-radius: 9999px;
+    filter: blur(140px);
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-track {
+    animation: marquee-scroll 38s linear infinite;
+}
+
+.marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes pulse-dot {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.55);
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgba(16, 185, 129, 0);
+    }
+}
+
+.status-dot-online {
+    animation: pulse-dot 2.4s ease-in-out infinite;
+}
+
+.text-glow-lilac {
+    text-shadow: 0 0 24px rgba(192, 132, 252, 0.55), 0 0 64px rgba(139, 92, 246, 0.3);
+}
+
+.hero-vignette {
+    background: linear-gradient(to top, rgba(9, 10, 15, 0.92) 0%, rgba(9, 10, 15, 0.35) 45%, rgba(9, 10, 15, 0.05) 75%);
+}

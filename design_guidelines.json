@@ -1,0 +1,204 @@
+{
+  "project_title": "BRUMA - Dark Mode Web Game Launcher & Client Platform",
+  "app_type": "dashboard",
+  "theme_strategy": {
+    "primary_mode": "dark",
+    "theme": "Tactical Cyber-Gothic Dark Matte with Electric Purple & Soft Lilac Highlights",
+    "background_philosophy": "Dark matte slate-black (#090a0f base, #12141d surface, #181b28 elevated card) with 1px purple-tinted subtle borders (#2e244d) and ambient purple glow behind hero actions.",
+    "color_palette": {
+      "bg_main": "#090a0f",
+      "bg_surface": "#11131c",
+      "bg_card": "#181a26",
+      "bg_card_hover": "#222536",
+      "border_subtle": "#252238",
+      "border_active": "#7c3aed",
+      "text_primary": "#f8fafc",
+      "text_secondary": "#94a3b8",
+      "text_muted": "#64748b",
+      "accent_purple_vibrant": "#8b5cf6",
+      "accent_purple_deep": "#6d28d9",
+      "accent_lilac_light": "#c084fc",
+      "accent_lilac_soft": "#e9d5ff",
+      "status_online": "#10b981",
+      "status_away": "#f59e0b",
+      "status_dnd": "#ef4444"
+    }
+  },
+  "typography": {
+    "font_family_heading": "Outfit, Clash Display, system-ui, sans-serif",
+    "font_family_body": "Inter, Manrope, system-ui, sans-serif",
+    "font_family_mono": "JetBrains Mono, monospace",
+    "heading_styles": {
+      "logo": "font-black tracking-widest text-2xl uppercase bg-gradient-to-r from-purple-400 via-lilac-300 to-indigo-400 bg-clip-text text-transparent drop-shadow-[0_0_12px_rgba(139,92,246,0.5)]",
+      "hero_title": "font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight text-white drop-shadow-md",
+      "section_title": "font-bold text-xl sm:text-2xl text-slate-100 tracking-tight flex items-center gap-2",
+      "card_title": "font-semibold text-lg text-slate-100 group-hover:text-purple-300 transition-colors"
+    }
+  },
+  "layout_architecture": {
+    "grid_structure": "3-column responsive desktop client layout with fixed header",
+    "top_bar": {
+      "height": "h-16 md:h-20",
+      "elements": [
+        "Left: Logo 'BRUMA' with glowing rune icon + status dot",
+        "Center: Search bar with glass blur, magnifying lens icon, shortcut hint 'Ctrl + K', dark search input",
+        "Right: Action tools - Message notifications icon with lilac badge, Notification bell icon with purple dot, Profile avatar with online halo ring & dropdown indicator"
+      ]
+    },
+    "left_sidebar": {
+      "width": "w-64 fixed/sticky left-0 top-16 md:top-20 h-[calc(100vh-5rem)] border-r border-purple-950/40 bg-[#0d0e15]/90 backdrop-blur-md",
+      "navigation_links": [
+        { "name": "Home", "icon": "HomeIcon", "active": true, "badge": null },
+        { "name": "Category", "icon": "GridIcon", "active": false, "badge": null },
+        { "name": "Library", "icon": "BookmarkIcon", "active": false, "badge": null },
+        { "name": "Community", "icon": "UsersIcon", "active": false, "badge": null },
+        { "name": "Friends", "icon": "UserGroupIcon", "active": false, "badge": "2" },
+        { "name": "Wishlist", "icon": "HeartIcon", "active": false, "badge": null },
+        { "name": "Downloads", "icon": "DownloadIcon", "active": false, "badge": null }
+      ],
+      "bottom_links": ["Settings", "Help"],
+      "cta_button": {
+        "text": "Go to library",
+        "style": "W-full bg-gradient-to-r from-purple-900/80 to-indigo-900/80 hover:from-purple-800 hover:to-indigo-800 text-purple-200 border border-purple-500/50 shadow-[0_0_15px_rgba(139,92,246,0.25)] rounded-xl py-3 font-semibold transition-all duration-300 flex items-center justify-center gap-2 group cursor-pointer"
+      }
+    },
+    "main_content": {
+      "spacing": "flex-1 px-4 sm:px-6 lg:px-8 py-6 overflow-y-auto space-y-8",
+      "sections": [
+        {
+          "name": "Tag Selector",
+          "tags": ["Magic", "Fantasy", "Open World", "Adventure"],
+          "style": "Flex wrap gap-2 sm:gap-3 py-1. Active tag highlighted in electric purple glow, inactive tags in sleek dark glass pills with purple hover border."
+        },
+        {
+          "name": "Hero Banner ('Magia da Floresta')",
+          "style": "Relative rounded-3xl overflow-hidden border border-purple-500/30 shadow-2xl min-h-[360px] md:min-h-[420px] lg:min-h-[460px] flex flex-col justify-end p-6 md:p-10 group",
+          "action_buttons": {
+            "left_button": {
+              "label": "descrição",
+              "style": "bg-purple-950/80 hover:bg-purple-900 text-purple-200 border border-purple-600/50 backdrop-blur-md px-6 py-3 rounded-xl font-medium transition-all duration-200 flex items-center gap-2"
+            },
+            "right_button": {
+              "label": "jogar",
+              "style": "bg-gradient-to-r from-purple-300 via-lilac-200 to-purple-400 hover:from-purple-200 hover:to-purple-300 text-purple-950 font-extrabold px-8 py-3 rounded-xl shadow-[0_0_20px_rgba(192,132,252,0.6)] hover:shadow-[0_0_30px_rgba(192,132,252,0.8)] scale-100 hover:scale-[1.03] transition-all duration-200 flex items-center gap-2"
+            }
+          }
+        },
+        {
+          "name": "Jogos Indies Grid",
+          "style": "Grid grid-cols-1 md:grid-cols-3 gap-6",
+          "card_count": 3,
+          "card_details": "Vertical image aspect-ratio 16:10 or 4:3, glowing cover art, tag badges, title, description preview, and purple 'descrição' button with hover lift effect."
+        }
+      ]
+    },
+    "right_sidebar": {
+      "width": "w-72 xl:w-80 hidden lg:block sticky top-16 md:top-20 h-[calc(100vh-5rem)] border-l border-purple-950/40 bg-[#0d0e15]/90 backdrop-blur-md p-5 overflow-y-auto space-y-8",
+      "blocks": [
+        {
+          "title": "Friends Online",
+          "count": 7,
+          "details": "List of 7 mock users with circular avatars, online status rings (green/purple), current game activity text, and quick action icons on hover."
+        },
+        {
+          "title": "Recentemente jogado",
+          "details": "Compact vertical list of played games, game thumbnail icon, title, hours played label ('24h jogadas', '12h jogadas', etc.), and vibrant animated purple progress bar."
+        }
+      ]
+    }
+  },
+  "media_assets": {
+    "hero_banner": {
+      "game_title": "Magia da Floresta: Whispers of Eldoria",
+      "url": "https://images.unsplash.com/photo-1635752019785-6637044adea9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHw0fHxnbG93aW5nJTIwbWFnaWMlMjBmb3Jlc3QlMjBmYW50YXN5JTIwZ2FtZSUyMGFydHxlbnwwfHx8fDE3OTI2Mjk0Nzd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Explore uma floresta mística e viva repleta de criaturas mágicas, feitiços anciãos e mistérios ocultos nas sombras."
+    },
+    "indie_games": [
+      {
+        "id": "indie-1",
+        "title": "Chronicles of Aethelgard",
+        "genre": "RPG / Fantasy",
+        "url": "https://images.unsplash.com/photo-1731937817165-1fed94fc03b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwxfHxpbmRpZSUyMGZhbnRhc3klMjBSUEclMjBnYW1lJTIwbGFuZHNjYXBlfGVufDB8fHx8MTc5MjYyOTQ3N3ww&ixlib=rb-4.1.0&q=85",
+        "summary": "Uma jornada indie pelas florestas proibidas de Aethelgard, desvendando ruínas esquecidas."
+      },
+      {
+        "id": "indie-2",
+        "title": "Vale das Sombras Primordiais",
+        "genre": "Adventure / Magic",
+        "url": "https://images.unsplash.com/photo-1711319551836-f7ca9764a898?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHwyfHxpbmRpZSUyMGZhbnRhc3klMjBSUEclMjBnYW1lJTIwbGFuZHNjYXBlfGVufDB8fHx8MTc5MjYyOTQ3N3ww&ixlib=rb-4.1.0&q=85",
+        "summary": "Domine artes de magia elemental e enfrente titãs lendários em vales iluminados por aura mística."
+      },
+      {
+        "id": "indie-3",
+        "title": "Castelo dos Ventos Éter",
+        "genre": "Open World / Magic",
+        "url": "https://images.unsplash.com/photo-1763198216883-7473e2c7eabb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNzl8MHwxfHNlYXJjaHw0fHxpbmRpZSUyMGZhbnRhc3klMjBSUEclMjBnYW1lJTIwbGFuZHNjYXBlfGVufDB8fHx8MTc5MjYyOTQ3N3ww&ixlib=rb-4.1.0&q=85",
+        "summary": "Construa e explore a fortaleza voadora dos anciãos acima das nuvens roxas de Eldoria."
+      }
+    ],
+    "friends": [
+      { "id": "f1", "name": "Valkyrie_99", "status": "online", "game": "Magia da Floresta", "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80" },
+      { "id": "f2", "name": "ShadowBlade", "status": "online", "game": "Chronicles of Aethelgard", "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80" },
+      { "id": "f3", "name": "Luna_Mage", "status": "online", "game": "Em menu principal", "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80" },
+      { "id": "f4", "name": "CyberRune", "status": "online", "game": "Castelo dos Ventos", "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80" },
+      { "id": "f5", "name": "EldoriaHero", "status": "online", "game": "Vale das Sombras", "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&auto=format&fit=crop&q=80" },
+      { "id": "f6", "name": "ArcaneSpell", "status": "online", "game": "Criando mod", "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&auto=format&fit=crop&q=80" },
+      { "id": "f7", "name": "Kaelthas_BR", "status": "online", "game": "Online", "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80" }
+    ],
+    "recently_played": [
+      { "title": "Magia da Floresta", "hours": "48h jogadas", "progress": 85, "image": "https://images.unsplash.com/photo-1635752019785-6637044adea9?w=100&auto=format&fit=crop&q=80" },
+      { "title": "Chronicles of Aethelgard", "hours": "18h jogadas", "progress": 45, "image": "https://images.unsplash.com/photo-1731937817165-1fed94fc03b2?w=100&auto=format&fit=crop&q=80" },
+      { "title": "Vale das Sombras Primordiais", "hours": "32h jogadas", "progress": 68, "image": "https://images.unsplash.com/photo-1711319551836-f7ca9764a898?w=100&auto=format&fit=crop&q=80" }
+    ]
+  },
+  "interactive_states_and_motion": {
+    "library": "framer-motion for page loads and card entrance transitions",
+    "animations": {
+      "stagger_children": 0.08,
+      "card_hover": "scale: 1.02, translateY: -4px, shadow: glowing purple box-shadow",
+      "button_click": "scale: 0.97",
+      "progress_bar": "smooth width transition on load using cubic-bezier(0.4, 0, 0.2, 1)"
+    }
+  },
+  "testing_and_accessibility": {
+    "data_testid_rules": "All interactive elements (buttons, inputs, links, tabs, badges) MUST have data-testid attributes",
+    "required_test_ids": [
+      "logo-bruma",
+      "search-input",
+      "notifications-button",
+      "messages-button",
+      "user-profile-button",
+      "nav-home",
+      "nav-category",
+      "nav-library",
+      "nav-community",
+      "nav-friends",
+      "nav-friends-badge",
+      "nav-wishlist",
+      "nav-downloads",
+      "nav-settings",
+      "nav-help",
+      "btn-go-to-library",
+      "tag-magic",
+      "tag-fantasy",
+      "tag-open-world",
+      "tag-adventure",
+      "hero-description-button",
+      "hero-play-button",
+      "indie-card-1-btn",
+      "indie-card-2-btn",
+      "indie-card-3-btn",
+      "friends-online-list",
+      "recently-played-list"
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Build a single-page or rich tabbed static interface for the BRUMA web game launcher matching dark mode client style.",
+    "Strictly follow the purple and lilac accent color palette (#8b5cf6, #c084fc, #6d28d9) over dark matte background (#090a0f).",
+    "Implement the left sidebar with active Home item, '2' purple badge on Friends, and bottom highlighted 'Go to library' button.",
+    "Implement the main hero section with 'magia da floresta' title, glowing artwork, dark purple 'descrição' button and lilac 'jogar' button.",
+    "Render 3 Indie Game vertical cards with image preview, game title, description, and purple 'descrição' button.",
+    "Implement right sidebar with 7 online friends and recently played games with purple progress bars.",
+    "Ensure all interactive buttons have hover scaling, smooth glow effects, and required data-testid attributes."
+  ]
+}
