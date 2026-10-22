@@ -66,3 +66,70 @@ export const MARQUEE_ITEMS = [
     "whispers of eldoria",
     "bruma originals",
 ];
+
+export const GAMES = {
+    hero: {
+        id: "hero",
+        title: "Magia da Floresta: Whispers of Eldoria",
+        genre: "Fantasy / Open World",
+        image: HERO.image,
+        rating: 5,
+        size: "24,6 GB",
+        version: "1.4.2",
+        synopsis:
+            "Nas profundezas de Eldoria, a floresta respira magia antiga. Você desperta como o último Tecelão de Runas, capaz de ouvir os sussurros das árvores e moldar feitiços vivos. Explore clareiras bioluminescentes, forge pactos com criaturas místicas e desvende o mistério da Névoa Roxa que consome as raízes do mundo. Cada escolha reescreve o destino da floresta — e o seu.",
+        screenshots: [
+            "https://images.unsplash.com/photo-1518562180175-34a163b1a9a6?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+            "https://images.unsplash.com/photo-1566865669454-7d1b0a27512d?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+            "https://images.unsplash.com/photo-1511497584788-876761c119ee?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+        ],
+    },
+    "indie-1": {
+        id: "indie-1",
+        title: "Chronicles of Aethelgard",
+        genre: "RPG / Fantasy",
+        image: INDIE_GAMES[0].image,
+        rating: 4,
+        size: "11,2 GB",
+        version: "0.9.8",
+        synopsis:
+            "Uma jornada indie pelas florestas proibidas de Aethelgard, onde ruínas esquecidas guardam crônicas de um império caído. Monte seu grupo de aventureiros, decifre glifos anciãos e enfrente guardiões de pedra em combate tático por turnos. Feito por um estúdio de três pessoas, com coração gigante.",
+        screenshots: [
+            "https://images.unsplash.com/photo-1636894290355-e05f59eb8f37?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+            "https://images.unsplash.com/photo-1550514920-7bd08149411d?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+            "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+        ],
+    },
+    "indie-2": {
+        id: "indie-2",
+        title: "Vale das Sombras Primordiais",
+        genre: "Adventure / Magic",
+        image: INDIE_GAMES[1].image,
+        rating: 4,
+        size: "18,9 GB",
+        version: "2.1.0",
+        synopsis:
+            "Domine as artes da magia elemental em vales banhados por aura mística. Escale picos colossais, desafie titãs lendários que dormem sob as montanhas e aprenda que toda sombra carrega uma memória. Uma aventura de exploração contemplativa com momentos de pura adrenalina arcana.",
+        screenshots: [
+            "https://images.unsplash.com/photo-1716741054609-2bdcad310de5?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+            "https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+            "https://images.unsplash.com/photo-1519681393784-d120267933ba?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+        ],
+    },
+    "indie-3": {
+        id: "indie-3",
+        title: "Castelo dos Ventos Éter",
+        genre: "Open World / Magic",
+        image: INDIE_GAMES[2].image,
+        rating: 5,
+        size: "31,4 GB",
+        version: "1.0.3",
+        synopsis:
+            "Acima das nuvens roxas de Eldoria flutua a fortaleza dos anciãos. Construa, expanda e defenda seu castelo voador enquanto explora ilhas celestes geradas pelo vento. Domine correntes de éter, negocie com mercadores nômades do céu e descubra por que os anciãos abandonaram o trono.",
+        screenshots: [
+            "https://images.unsplash.com/photo-1550930267-13958de909cd?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+            "https://images.pexels.com/photos/9968434/pexels-photo-9968434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "https://images.unsplash.com/photo-1514539079130-25950c84af65?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+        ],
+    },
+};

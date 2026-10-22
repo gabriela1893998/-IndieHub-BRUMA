@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Play, Info } from "lucide-react";
 import { HERO } from "../../data/launcherData";
@@ -18,6 +19,7 @@ const RevealLine = ({ children, delay, className }) => (
 
 export const Hero = () => {
     const ref = useRef(null);
+    const navigate = useNavigate();
     const mx = useMotionValue(0.5);
     const my = useMotionValue(0.5);
     const sx = useSpring(mx, { stiffness: 60, damping: 20 });
@@ -86,6 +88,7 @@ export const Hero = () => {
                 >
                     <motion.button
                         data-testid="hero-description-button"
+                        onClick={() => navigate("/jogo/hero")}
                         whileHover={{ scale: 1.03 }}
                         whileTap={{ scale: 0.96 }}
                         className="flex items-center gap-2 rounded-xl px-6 py-3 text-sm font-semibold text-purple-200 bg-purple-950/80 border border-purple-600/50 backdrop-blur-md hover:bg-purple-900 hover:border-purple-400/70 transition-colors duration-200"

@@ -17,6 +17,8 @@ Criar a interface de uma plataforma web de jogos estilo launcher/client em dark 
 - Jogador que quer um hub visual para descobrir e lançar jogos.
 
 ## Requisitos implementados (22/10/2026)
+- Página de detalhes do jogo (/jogo/:id) para os 4 jogos: header com arte, sinopse, galeria de capturas com miniaturas clicáveis, card lateral com avaliação/tamanho/versão/gênero e botão "instalar" com progresso animado que vira "jogar"; botão "voltar para home"; responsiva.
+- Botões "descrição" do hero e dos 3 cards indies navegam para a página de detalhes; logo BRUMA volta para home.
 - Top bar fixa: logo BRUMA com marca SVG (também favicon), search central com atalho Ctrl K, mensagens (badge 3), notificações, perfil "testando 1" com status online.
 - Sidebar esquerda: 7 links com ícones, Home ativo, badge "2" em Friends, Settings/Help, CTA "Go to library" com glow.
 - Tags selecionáveis (estado ativo roxo com glow).
@@ -29,10 +31,10 @@ Criar a interface de uma plataforma web de jogos estilo launcher/client em dark 
 
 ## Backlog
 - P0: (nenhum pendente do escopo pedido)
-- P1: páginas internas (Library, Friends, perfil de jogo), busca funcional com filtro real
+- P1: páginas internas (Library, Friends), busca funcional com filtro real
 - P2: alternância de destaque do hero por tag, temas de cor, backend de catálogo
 
 ## Próximas tarefas sugeridas
-- Modal/página de detalhes do jogo ao clicar em "descrição"
 - Biblioteca com jogos instalados e progresso de download
 - Filtro real da busca e das tags
+- Lista de amigos com chat simulado

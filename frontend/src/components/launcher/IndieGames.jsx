@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { Sparkles, ArrowUpRight } from "lucide-react";
 import { INDIE_GAMES } from "../../data/launcherData";
 
 export const IndieGames = () => {
+    const navigate = useNavigate();
     return (
         <section>
             <motion.h2
@@ -49,6 +51,7 @@ export const IndieGames = () => {
                             <p className="mt-1.5 text-sm text-slate-400 leading-relaxed line-clamp-2">{game.summary}</p>
                             <motion.button
                                 data-testid={game.testid}
+                                onClick={() => navigate(`/jogo/${game.id}`)}
                                 whileTap={{ scale: 0.96 }}
                                 className="mt-4 w-full flex items-center justify-center gap-2 rounded-xl py-2.5 text-sm font-bold text-white bg-purple-700 hover:bg-purple-600 shadow-[0_0_16px_rgba(109,40,217,0.35)] hover:shadow-[0_0_26px_rgba(139,92,246,0.55)] transition-all duration-300"
                             >
